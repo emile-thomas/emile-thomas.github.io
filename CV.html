@@ -1,62 +1,214 @@
-<html>
-    <head>
-        <title>Mon CV</title>
-        <link rel="stylesheet" href="CVcss.css">
-    </head>
-    
-    <body>
-        <div class="cv-container">
-            <aside class="sidebar">
-                <img src="photoCV.jpeg" width = 190px height = 220px>
-                <h2>Contact</h2>
-                <p>Email : emile.thomas@etu.minesparis.psl.eu</p>
-                <p>Téléphone : 06 31 41 92 65</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emile Thomas — CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CV.css">
+</head>
+<body>
 
-                <h2>Langues</h2>
-                <p>Français : Langue maternelle</p>
-                <p>Anglais : Courant (B2+)</p>
-                <p>Italien : Débutant (A2)</p>
+<div class="cv-wrapper">
 
-                <h2>Compétences</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>HTML / CSS</li>
-                    <li>C++</li>
-                    <li>Blender3D</li>
-                </ul>
-            </aside>
+    <!-- ░░ SIDEBAR ░░ -->
+    <aside class="sidebar">
 
-            <div class="content">
-                <h1 class="content-title">Emile THOMAS</h1>
-                <h2 class="content_title">Formation</h2>
-                <p>
-                    2019-2022 : Lyçée Sainte Marie du Port - <i>Les Sables D'Olonne</i>
-                    <br>
-                    <i>Baccalauréat Général - Mention Très Bien</i>
-                </p>
-                <p>
-                    2022-2025 : Lyçée Clémenceau - <i>Nantes</i>
-                    <br>
-                    <i>Classe Préparatoire aux Grandes Ecoles - Filière MPSI/MP*</i>
-                </p>
-                <p>
-                    2025-Aujourd'hui : Mines Paris - <i>Paris</i>
-                    <br>
-                    <i>Cycle ingénieur civil</i>
-                </p>
+        <div class="photo-wrap">
+            <img id="cv-photo" alt="Photo d'Emile Thomas">
+        </div>
 
-                <h2 class="content_title">Expérience</h2>
-                <p>
-                    2024 : Stage de 3 mois chez Thales - <i>Paris</i>
-                    <br>
-                    <i>Conception d'un système de communication sécurisé</i>
-                </p>
-                <p>
-                    2025 : Projet OCEAN - <i>Villefranche-sur-Mer</i>
-                    <br>
-                    <i>Développement d'un modèle informatique 3D d'un câble sous-marin</i>
-                </p>
+        <div class="name-block">
+            <h1><span class="name-first">Emile</span><span class="name-last">Thomas</span></h1>
+            <div class="subtitle">Élève Ingénieur Civil · Mines Paris PSL</div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section-side">
+            <h2>Contact</h2>
+            <ul class="info-list">
+                <li><span class="icon">☎</span><span>+06 33 30 34 56</span></li>
+                <li><span class="icon">✉</span><span>emile.thomas@etu.minesparis.psl.eu</span></li>
+                <li><span class="icon">📍</span><span>270 Rue St-Jacques, Paris 75005</span></li>
+            </ul>
+        </div>
+
+        <!-- Compétences informatique -->
+        <div class="section-side">
+            <h2>Informatique</h2>
+            <ul class="skill-list">
+                <li>Gestion de projet avec <strong>Git</strong></li>
+                <li>Programmation <strong>Python</strong> et <strong>C++</strong></li>
+                <li>Développement web <strong>HTML / CSS</strong></li>
+                <li>Écriture en <strong>LaTeX</strong></li>
+                <li>Modélisation 3D sur <strong>Blender</strong></li>
+            </ul>
+        </div>
+
+        <!-- Langues -->
+        <div class="section-side">
+            <h2>Langues</h2>
+            <div class="lang-item">
+                <div class="lang-row"><span class="lang-name">Français</span><span class="lang-level">Natif</span></div>
+                <div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></div>
+            </div>
+            <div class="lang-item">
+                <div class="lang-row"><span class="lang-name">Anglais</span><span class="lang-level">B2+</span></div>
+                <div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div>
+            </div>
+            <div class="lang-item">
+                <div class="lang-row"><span class="lang-name">Coréen</span><span class="lang-level">Débutant</span></div>
+                <div class="dots"><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            </div>
+            <div class="lang-item">
+                <div class="lang-row"><span class="lang-name">Italien</span><span class="lang-level">A2</span></div>
+                <div class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
             </div>
         </div>
-    </body>
+
+        <!-- Centres d'intérêt -->
+        <div class="section-side">
+            <h2>Centres d'intérêt</h2>
+            <ul class="interest-list">
+                <li>🏔 Randonnée · Alpinisme</li>
+                <li>🪨 Spéléologie · Canyoning</li>
+                <li>♟ Échecs <em>(2400 elo Blitz)</em></li>
+                <li>🎬 Cinéma</li>
+            </ul>
+        </div>
+
+    </aside>
+
+    <!-- ░░ MAIN ░░ -->
+    <main class="main">
+
+        <!-- Formation -->
+        <section class="section-main">
+            <h2>Formation</h2>
+
+            <div class="entry">
+                <div class="entry-marker"></div>
+                <div class="entry-body">
+                    <div class="entry-header">
+                        <div>
+                            <div class="entry-title">Cycle Ingénieur Civil</div>
+                            <div class="entry-place">Mines Paris – PSL · Paris</div>
+                        </div>
+                        <div class="entry-date">2025 – Aujourd'hui</div>
+                    </div>
+                    <ul class="entry-bullets">
+                        <li>Sciences : Mathématiques (calcul différentiel, probabilités), Physique (mécanique quantique, physique statistique et des milieux continus), Informatique pratique</li>
+                        <li>Enseignement généraliste : Sociologie, Économie, Environnement</li>
+                        <li>Langues vivantes : Anglais, Coréen et Italien</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-marker"></div>
+                <div class="entry-body">
+                    <div class="entry-header">
+                        <div>
+                            <div class="entry-title">Classes Préparatoires MPSI – MP★</div>
+                            <div class="entry-place">Lycée Clémenceau · Nantes</div>
+                        </div>
+                        <div class="entry-date">2022 – 2025</div>
+                    </div>
+                    <ul class="entry-bullets">
+                        <li>Sciences : Mathématiques, Physique, Informatique, Sciences de l'ingénieur</li>
+                        <li>TIPE (2024) : Création d'une IA pour maximiser les gains au Monopoly et prédire le résultat d'une partie</li>
+                        <li>TIPE (2025) : Réalisation de diélectriques éco-responsables à partir de matériaux biosourcés et de résine époxy pour un usage industriel</li>
+                        <li>Entraînements oraux hebdomadaires en français et en anglais</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-marker"></div>
+                <div class="entry-body">
+                    <div class="entry-header">
+                        <div>
+                            <div class="entry-title">Baccalauréat Général – Mention Très Bien</div>
+                            <div class="entry-place">Lycée Sainte-Marie du Port · Les Sables-d'Olonne</div>
+                        </div>
+                        <div class="entry-date">2019 – 2022</div>
+                    </div>
+                    <ul class="entry-bullets">
+                        <li>Spécialités : Mathématiques, Physique, Sciences Économiques et Sociales</li>
+                        <li>Option : Mathématiques Expertes</li>
+                        <li>Concours général de mathématiques et de physique</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expériences -->
+        <section class="section-main">
+            <h2>Expériences</h2>
+
+            <div class="entry">
+                <div class="entry-marker"></div>
+                <div class="entry-body">
+                    <div class="entry-header">
+                        <div>
+                            <div class="entry-title">Cours Particuliers</div>
+                            <div class="entry-place">Mathématiques et Physique — Seconde &amp; Terminale</div>
+                        </div>
+                        <div class="entry-date">2025 – Aujourd'hui</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-marker"></div>
+                <div class="entry-body">
+                    <div class="entry-header">
+                        <div>
+                            <div class="entry-title">Projet OCEAN</div>
+                            <div class="entry-place">CNRS – IMEV – Laboratoire Océan · Villefranche-sur-Mer</div>
+                        </div>
+                        <div class="entry-date">Nov. 2025</div>
+                    </div>
+                    <ul class="entry-bullets">
+                        <li>Développement d'un modèle informatique 3D de câble sous-marin</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-marker"></div>
+                <div class="entry-body">
+                    <div class="entry-header">
+                        <div>
+                            <div class="entry-title">Agent de Travaux Saisonnier</div>
+                            <div class="entry-place">Pose de carrelage, démolition, peinture, maçonnerie, ossature-bois</div>
+                        </div>
+                        <div class="entry-date">Juil. 2023</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-marker"></div>
+                <div class="entry-body">
+                    <div class="entry-header">
+                        <div>
+                            <div class="entry-title">Stage Modélisation 3D</div>
+                            <div class="entry-place">Entreprise Cocktail Vision</div>
+                        </div>
+                        <div class="entry-date">Déc. 2018</div>
+                    </div>
+                    <ul class="entry-bullets">
+                        <li>Réalisation de modèles 3D pour l'affichage dynamique</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script src="CV.js"></script>
+</body>
 </html>
